@@ -1,6 +1,7 @@
 function truncateString(string, number){
-  if (string.length > number) {
-    return `${string.slice(0, number)}...`;
+  if(string.length > number){
+    const truncated = string.slice(0,number);
+    return `${truncated}...`
   } else {
     return string;
   }
